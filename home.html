@@ -5,145 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="home.css">
-    <style>
-        html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-    </style>
 </head>
 <body>
     <div id="containergeral">
-        <div id="containerHeader">
             <header>
-                <h1>
-                    Guilherme Clothers
-                </h1>
-
-                <nav>
-                    <section class="navbar">
-                        <ul class="navbar-itens" id="Home" name="home">
-                            <li>
-                                <a href="/Clothers/home.html">Home</a>
-                            </li>
-                        </ul>
-                    
-                        <ul class="navbar-itens" id="produtos" name="produtos">
-                            <li>
-                             <a href="/Clothers/produtoIND.html">Produtos</a>
-                            </li>
-                        </ul>
-                    
-                        <ul class="navbar-itens"id="SobreNos" name="sobrenos">
-                            <li>
-                                <a href="/Clothers/produtoIND.html">Sobre Nós</a>
-                            </li>
-                        </ul>
-                    </section>
-                </nav>
+                <div class="center">
+                    <div class="nomeMarca">
+                        <p>
+                            Guilherme Clothers
+                        </p>
+                    </div>    
+                    <nav class="navbar"> 
+                        <a href="/Clothers/home.html">Home</a>   
+                        <a href="/Clothers/produtoIND.html">Produtos</a>
+                        <a href="/Clothers/produtoIND.html">Sobre Nós</a>
+                    </nav>
+                </div>
             </header>
-          </div>    
-
-            <section class="conteudoTECH">
+         
+        
+        <section class="ContainerINF">
                 <div id="ConteudoConteiner" name="Texto">
-
                     <h1> Seu armario TECH </h1>
                     <h3> Vista-se com leveza e Tecnologia</h3>
-
-                    <button id="ButtonBuy">
+                    <button class="ButtonBuy">
                         Comprar
                     </button>
                 </div>
 
-            
-                <div class="imagemPrincipal">
-                    <img src="/Clothers/img/OIP (2).jpg" alt="Pessoa usando uma camiseta da nossa loja">
+                <div class="conteinerImagems">
+                    <img class="imagemPrincipal" src="/img/OIP (2).jpg" alt="Pessoa usando uma camiseta da nossa loja">
+
+                    <div class="PrincipaisProdutos">
+                        <h2>
+                            Principais Produtos:
+                        </h2>
+                        <div class="imagemagrupadas">
+                            <div class="imagemagrupada">
+                                <img id="img1" src="/img/OIP 3.jpg" title="Peita Nike Masculino">
+                                <p>Peita Masculina Nike</p>
+                            </div>
+                        
+                            <div class="imagemagrupada">
+                                <img id="img2" src="/img/R.jpg" title="Peita Nike Feminina">
+                                <p>Peita Feminina Nike</p>
+                            </div>
+                        
+                            <div class="imagemagrupada">
+                                <img id="img3" src="/img/OIP.jpg" title="Casaco Nike Masculino">
+                                <p>Casaco Homem Nike</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>      
+        </section>
+
+        <form>
+                <div class="titulo">
+                    <h3 class="grupo">Formulário Para Receber as Novidades e Promoções:</h3>
                 </div>
-
-                <div class="PrincipaisProdutos">
-                    <h2>
-                        Principais Produtos:
-                    </h2>
-
-                    <div id="img1">
-                        <img id="peitaHomenNike1" src="/Clothers/img/OIP 3.jpg" title="Peita Nike Masculino">
-                        <p> Peita Masculina Nike </p>
-                    </div>
-
-                    <div id="img2">
-                        <img id="peitaMinaNike1" src="/Clothers/img/R.jpg" title="Peita Nike Feminina">
-                        <p> Peita Feminina Nike </p>
-                    </div>
-
-                    <div id="img3">
-                        <img id="casacoHomem1" src="/Clothers/img/OIP.jpg" title="Casado Nike Masculino">
-                    
-                        <p> Casaco Homem Nike </p>
-                    </div>
-                </div>
-            </section>
-
-            <form class="form">
-                <h3>
-                    Formulario Para receber as Novidades e Promoçoes:
-                </h3>
-                <div id="names">
+            <fieldset class="grupo">
+                <div class="inputs">
                     <label for="name">Seu Nome</label>
                     <input type="text" id="name" placeholder="Nome">
                 </div>
-                <div id="Emails">
+                <div class="inputs">
                     <label for="email">Seu Email</label>
                     <input type="email" id="email" placeholder="exemplo@gmail.com">
                 </div>
-                <div id="Telefones">
-                    <label for="Telefones">Seu Email</label>
+                <div class="inputs">
+                    <label for="Telefones">Seu Telefone</label>
                     <input type="tel" id="Telefones" placeholder="19995681352">
                 </div>
+             
+                <div>
+                    <button>
+                        Enviar formulario
+                    </button>
+                </div>
 
-            </form>
-
-            <footer>
-                <nav>
-                    <section class="navbar">
-                        <ul class="navbar-itens" id="produtos" name="home">
-                            <li>
-                                <a href="/Clothers/home.html">Home</a>
-                            </li>
-                        </ul>
-                    
-                        <ul class="navbar-itens" id="produtos" name="produtos">
-                            <li>
-                             <a href="/Clothers/produtoIND.html">Produtos</a>
-                            </li>
-                        </ul>
-                    
-                        <ul class="navbar-itens"id="SobreNos" name="sobrenos">
-                            <li>
-                                <a href="/Clothers/produtoIND.html">Sobre Nós</a>
-                            </li>
-                        </ul>
-                    </section>
+            </fieldset>    
+        </form>
+        
+            
+        <footer>
+            <div class="center">
+                <div class="nomeMarca">
+                    <p>
+                        Guilherme Clothers
+                    </p>
+                </div>
+                <nav class="navbar">
+                    <a href="/Clothers/home.html">Home</a>
+                    <a href="/Clothers/produtoIND.html">Produtos</a>
+                    <a href="/Clothers/produtoIND.html">Sobre Nós</a>
                 </nav>
-            </footer>
+            </div>
+        </footer>
+        
         </div>
     </div>    
 </body>
