@@ -1,9 +1,18 @@
-Projeto da DoDev
+DoDev Clothing - Site de Vendas de Roupas
+DoDev Clothing Preview
 
-Consistem na criação de um site de vendas de roupas com 3 páginas: home, produto individual e sobre nós
+Este é o repositório do projeto DoDev Clothing, um site de vendas de roupas desenvolvido com foco na simplicidade e elegância. O site consiste em três páginas principais: a página inicial (home), a página de exibição de produtos individuais e a página "Sobre Nós".
 
-Ferramentas usadas: 
+Visão Geral
+O DoDev Clothing é um projeto que visa criar uma plataforma de comércio eletrônico para venda de roupas, proporcionando aos usuários uma experiência agradável de compra. Com um design atraente e intuitivo, os clientes podem navegar facilmente pelo catálogo de produtos, visualizar detalhes de cada item e aprender mais sobre a equipe por trás da loja.
 
-Javascript
-HTML
-CSS
+
+Ferramentas Utilizadas
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+JavaScript: Usado para a interatividade e funcionalidade do site.
+HTML: Responsável pela estrutura e conteúdo das páginas.
+CSS: Utilizado para estilização e design das páginas.
+Como Executar o Projeto
+Para executar o projeto em sua máquina local, siga estas etapas:
+
