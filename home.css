@@ -34,6 +34,10 @@ header{
     width: 50%;
 }
 
+.nomeMarca p{
+    font-size: 20px;
+}
+
 .navbar {
    width: 50%;
    text-align: right;
