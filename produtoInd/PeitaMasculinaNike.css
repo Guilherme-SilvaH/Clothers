@@ -45,7 +45,21 @@ header{
     margin-right: 15px;
 }
 
+.buttonIMG{
+    background: none; 
+    border: none; 
+    padding: 10px 20px; 
+    color: #333; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    border-radius: 5px; 
+}
 
+.buttonIMG:hover {
+    background-color: #333; /* Cor de fundo quando o botão é destacado */
+    color: #fff; /* Cor do texto quando o botão é destacado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
 
 .campo{
     display: flex;
@@ -162,5 +176,70 @@ header{
 .button img{
     width: 14px;
 }
+
+fieldset {
+    border: 0;
+}
+
+.grupo{
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 39%;
+    margin-top: 2%;
+    justify-content: center;
+    border-radius: 1%;
+}
+
+
+
+
+.inputs {
+    margin-bottom: 20px;
+    display: inline-block;
+   
+}
+
+.titulo{
+   height: 1px
+}
+
+label {
+    padding: 2px;
+}
+
+.inputs label {
+    width: 20px;
+    margin-bottom: 0.3em;
+
+}
+
+fieldset.grupo.inputs {
+    float: left;
+    margin-right: 1em;
+}
+
+.inputs input[type="text"],
+.inputs input[type="email"],
+.inputs input[type="tel"] {
+    padding: 0.5em;
+    border: 2px 2px 2px 2px;
+    box-shadow: rgb(red, green, blue);
+    display: block;
+}
+
+
+.buttonForm{
+    justify-content: center;
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+
+}
+
+
 
 

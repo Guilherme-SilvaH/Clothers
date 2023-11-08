@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    height: 85px;
+}
+
+header{
+    padding: 20px 0;
+  
+}
+
+
+.nomeMarca{
+    width: 50%;
+}
+
+.nomeMarca p{
+    font-size: 20px;
+}
+
+.navbar {
+   width: 50%;
+   text-align: right;
+
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+
+.buttonIMG{
+    background: none; 
+    border: none; 
+    padding: 10px 20px; 
+    color: #333; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    border-radius: 5px; 
+}
+
+.buttonIMG:hover {
+    background-color: #333; /* Cor de fundo quando o botão é destacado */
+    color: #fff; /* Cor do texto quando o botão é destacado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(78vh - 85px);
+    padding: 0 20px; /* Ajuste o padding conforme necessário */
+}
+
+.textos{
+   padding: 30px;
+}
+
+
+
+.textomaior{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+    margin-bottom: 20px; 
+}
+
+
+.containertextomenor{
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.textomenor{
+    font-size: 30px; 
+    color: #666; 
+    line-height: 1.5; /* Espaçamento entre linhas para facilitar a leitura */
+}
+
+
+
+.textomaior, .textomenor {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.containertextomenor {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+fieldset {
+    border: 0;
+}
+
+
+.grupo{
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 39%;
+    margin-top: 2%;
+    justify-content: center;
+    border-radius: 1%;
+}
+
+.inputs {
+    margin-bottom: 20px;
+    display: inline-block;
+   
+}
+
+.titulo{
+   height: 1px
+}
+
+label {
+    padding: 2px;
+}
+
+.inputs label {
+    width: 20px;
+    margin-bottom: 0.3em;
+
+}
+
+fieldset.grupo.inputs {
+    float: left;
+    margin-right: 1em;
+}
+
+.inputs input[type="text"],
+.inputs input[type="email"],
+.inputs input[type="tel"] {
+    padding: 0.5em;
+    border: 2px 2px 2px 2px;
+    box-shadow: rgb(red, green, blue);
+    display: block;
+}
+
+
+.buttonForm{
+    justify-content: center;
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+
+}
