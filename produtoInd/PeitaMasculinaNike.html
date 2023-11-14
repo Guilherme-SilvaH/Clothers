@@ -78,33 +78,31 @@
                     </div>                    
             </section>
             </div>    
-      <form>
-        <div class="titulo">
-          <h3 class="grupo">
-            Formulário Para Receber as Novidades e Promoções:
-          </h3>
-        </div>
-        <fieldset class="grupo">
-          <div class="inputs">
-            <label for="name">Seu Nome</label>
-            <input type="text" id="name" placeholder="Nome" />
-          </div>
-          <div class="inputs">
-            <label for="email">Seu Email</label>
-            <input type="email" id="email" placeholder="exemplo@gmail.com" />
-          </div>
-          <div class="inputs">
-            <label for="Telefones">Seu Telefone</label>
-            <input type="tel" id="Telefones" placeholder="19995681352" />
-          </div>
-
-          <div>
-            <button class="buttonForm">Enviar formulario</button>
-          </div>
-        </fieldset>
-      </form>
-
-     
-
+      
+            <form>
+              <div class="titulo">
+                  <h3 class="grupo">Formulário Para Receber as Novidades e Promoções:</h3>
+              </div>
+              <fieldset class="grupo">
+                  <div class="inputs">
+                      <label for="name">Seu Nome</label>
+                      <input type="text" id="name" name="name" placeholder="Nome">
+                  </div>
+                  <div class="inputs">
+                      <label for="email">Seu Email</label>
+                      <input type="email" id="email" name="email" placeholder="exemplo@gmail.com">
+                  </div>
+                  <div class="inputs">
+                      <label for="telefone">Seu Telefone</label>
+                      <input type="tel" id="telefone" name="telefone" placeholder="19995681352">
+                  </div>
+                  <div>
+                      <button class="buttonForm" type="button" onclick="enviarFormulario()">Enviar formulário</button>
+                  </div>
+              </fieldset>
+          </form>
+          
+          
+          <script src="/api/apiform.js"></script>
   </body>
 </html>

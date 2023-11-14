@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="/PaginaInicial/home.css">
+    
 </head>
 <body>
     <div id="containergeral">
@@ -30,7 +31,7 @@
                     <h1> Seu armario TECH </h1>
                     <h3> Vista-se com leveza e Tecnologia</h3>
                     <button class="ButtonBuy">
-                        Comprar
+                        <a href="/produtoInd/PeitaMasculinaNike.html">Comprar</a>
                     </button>
                 </div>
 
@@ -63,39 +64,32 @@
         </section>
 
         <form>
-                <div class="titulo">
-                    <h3 class="grupo">Formulário Para Receber as Novidades e Promoções:</h3>
-                </div>
+            <div class="titulo">
+                <h3 class="grupo">Formulário Para Receber as Novidades e Promoções:</h3>
+            </div>
             <fieldset class="grupo">
                 <div class="inputs">
                     <label for="name">Seu Nome</label>
-                    <input type="text" id="name" placeholder="Nome">
+                    <input type="text" id="name" name="name" placeholder="Nome">
                 </div>
                 <div class="inputs">
                     <label for="email">Seu Email</label>
-                    <input type="email" id="email" placeholder="exemplo@gmail.com">
+                    <input type="email" id="email" name="email" placeholder="exemplo@gmail.com">
                 </div>
                 <div class="inputs">
-                    <label for="Telefones">Seu Telefone</label>
-                    <input type="tel" id="Telefones" placeholder="19995681352">
+                    <label for="telefone">Seu Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="19995681352">
                 </div>
-             
                 <div>
-                    <button class="buttonForm">
-                        Enviar formulario
-                    </button>
+                    <button class="buttonForm" type="button" onclick="enviarFormulario()">Enviar formulário</button>
                 </div>
-
-            </fieldset>    
+            </fieldset>
         </form>
         
-            
         <footer>
             <div class="center">
                 <div class="nomeMarca">
-                    <p>
-                        Guilherme Clothers
-                    </p>
+                    <p>Guilherme Clothers</p>
                 </div>
                 <nav class="navbar">
                     <a href="/Clothers/home.html">Home</a>
@@ -104,6 +98,8 @@
                 </nav>
             </div>
         </footer>
-    </div>    
-</body>
-</html>
+        </div>
+        <script src="/api/apiform.js"></script>
+        </body>
+        </html>
+        
