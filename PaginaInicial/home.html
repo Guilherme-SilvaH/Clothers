@@ -9,21 +9,36 @@
 </head>
 <body>
     <div id="containergeral">
-            <header>
-                <div class="center">
-                    <div class="nomeMarca">
-                        <p>
-                            Guilherme Clothers
-                        </p>
-                    </div>    
-                    <nav class="navbar"> 
-                        <a href="/PaginaInicial/home.html">Home</a>
-                        <a href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
-                        <a href="/sobrenos/sobrenos.html">Sobre Nós</a>
+        <header>
+            <div class="center">
+                <div class="nomeMarca">
+                    <p>Guilherme Clothers</p>
+                </div>    
+                <nav class="navbar"> 
+                    <a class="nav-iten" href="/PaginaInicial/home.html">Home</a>
+                    <a class="nav-iten"href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
+                    <a class="nav-iten"href="/sobrenos/sobrenos.html">Sobre Nós</a>
+                    <div class="cart-icon">
                         <button class="buttonIMG"><img src="/img/icon-cart.svg" alt="Ícone do Carrinho" /></button>
-                    </nav>
+                    </div>
+                </nav>
+                <div class="mobile-menu-icon">
+                    <button  onclick="menuShow()" class="buttongIcon">
+                        <img class="icon" src="/img/menu_white_36dp.svg">
+                        
+                    </button>
                 </div>
-            </header>
+                
+                <div class="mobile-menu">
+                    <a class="nav-item" href="/PaginaInicial/home.html">Home</a>
+                    <a class="nav-item" href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
+                    <a class="nav-item" href="/sobrenos/sobrenos.html">Sobre Nós</a>
+                    <div class="cart-icon-mobile">
+                        <button class="buttonIMG"><img src="/img/icon-cart.svg" alt="Ícone do Carrinho" /></button>
+                    </div>
+                </div>
+        </header>
+        
          
         
         <section class="ContainerINF">
@@ -100,6 +115,7 @@
         </footer>
         </div>
         <script src="/api/apiform.js"></script>
+        <script src="/menuShow/menuShow.js"></script>
         </body>
         </html>
         

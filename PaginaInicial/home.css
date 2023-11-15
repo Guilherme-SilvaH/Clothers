@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
 
@@ -12,16 +18,17 @@ body {
 
 .center{
     display: flex;
-    flex-wrap: wrap;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2%;
-    height: 85px;
+    align-items: center; 
+   
 }
 
 header{
-    padding: 20px 0;
-  
+    padding:  3rem;
+    
+    background-color: #c2bfbf74;    
 }
 
 
@@ -36,7 +43,6 @@ header{
 .navbar {
    width: 50%;
    text-align: right;
-
 }
 
 .navbar a{
@@ -64,7 +70,7 @@ header{
 
 .ContainerINF{
     text-align: center;
-    margin-top: 100px;
+    
 }
 
 section.center{
@@ -234,4 +240,76 @@ footer .navbar a {
     text-decoration: none;
     font-weight: bold;
     margin-right: 15px;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+.cart-icon,
+.cart-icon-mobile {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.cart-icon img,
+.cart-icon-mobile img {
+    width: 20px; 
+}
+
+@media screen and (max-width: 800px) {
+    .center {
+        padding: 1.5rem 2rem; 
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column; 
+    
+    }
+
+    .nav-iten {
+        display: none;
+       
+    }
+
+    .buttonIMG {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        margin-left: auto;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+
+  
+    .mobile-menu a,
+    .mobile-menu .nav-iten {
+        padding: 1rem 0;
+        display: block;
+    }
+
+    .mobile-menu .buttonIMG {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .open {
+        display: flex;
+    }
 }
