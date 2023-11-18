@@ -17,9 +17,31 @@
             <a href="/PaginaInicial/home.html">Home</a>
             <a href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
             <a href="/sobrenos/sobrenos.html">Sobre Nós</a>
-            <button class="buttonIMG"><img src="/img/icon-cart.svg" alt="Ícone do Carrinho" /></button>
+            <button class="buttonIMG" onclick="openlittlecar()" ><img src="/img/icon-cart.svg" alt="Ícone do Carrinho" /></button>
+
+            <div id="carrinhoopen" class="carrinhoopen">
+
+            </div>
           </nav>
         </div> 
+
+        <div class="mobile-menu-icon">
+                    <button  onclick="menuShow()" class="buttongIcon">
+                        <img class="icon" src="/img/menu_white_36dp.svg">
+                        
+                    </button>
+                </div>
+                
+                <div class="mobile-menu">
+                    <a class="nav-item" href="/PaginaInicial/home.html">Home</a>
+                    <a class="nav-item" href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
+                    <a class="nav-item" href="/sobrenos/sobrenos.html">Sobre Nós</a>
+                    <div class="cart-icon-mobile">
+                        <button class="buttonIMG" id="carrinhoopen"><img src="/img/icon-cart.svg" alt="Ícone do Carrinho" /></button>
+                    </div>
+                </div>
+
+
       </header>
 
 
@@ -53,9 +75,9 @@
                     </div> 
                     <div class="right-side">
                         <div class="content">
-                            <h1> CAMISA NIKE </h1>
+                            <h1 id="nomecamiseta"> CAMISA NIKE </h1>
                             <div class="prices">
-                                <span class="price"> $125.00</span>
+                                <span id="price" class="price"> $125.00</span>
                                 <span class="off"> $250.00</span>
                             </div>
                             <div class="option">
