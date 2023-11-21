@@ -17,10 +17,11 @@
             <a href="/PaginaInicial/home.html">Home</a>
             <a href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
             <a href="/sobrenos/sobrenos.html">Sobre Nós</a>
-            <button class="buttonIMG" onclick="openlittlecar()" ><img src="/img/icon-cart.svg" alt="Ícone do Carrinho" /></button>
-
-            <div id="carrinhoopen" class="carrinhoopen">
-
+            <button class="buttonIMG">
+                <img class="iconcart" src="/img/icon-cart.svg" alt="Ícone do Carrinho" />
+            </button>
+                    </div>
+                </div>
             </div>
           </nav>
         </div> 
@@ -80,23 +81,20 @@
                                 <span id="price" class="price"> $125.00</span>
                                 <span class="off"> $250.00</span>
                             </div>
-                            <div class="option">
+                            <div class="option" id="contadorquant">
                                 <div class="amount">
-                                    <div class="minus">
+                                    <div id="menos" class="minus">
                                         <img src="/img/icon-minus.svg">
                                     </div>  
-                                    <span>
+                                    <span id="quantidade">
                                         0
                                     </span>
-                                    <div class="plus">
+                                    <div id="mais" class="plus">
                                         <img src="/img/icon-plus.svg">
                                     </div>
-    
-                                
                                 </div>
                                 <a href="" class="button"><img src="/img/icon-cart.svg"> Add to Cart</a>
                             </div>
-                        </div>
                     </div>                    
             </section>
             </div>    
@@ -126,5 +124,6 @@
           
           
           <script src="/api/apiform.js"></script>
+          <script src="/carrinho/contadorCarrinho/contadorcarrinho.js"></script>
   </body>
 </html>
