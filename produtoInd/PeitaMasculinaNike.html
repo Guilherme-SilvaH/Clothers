@@ -18,7 +18,9 @@
             <a href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
             <a href="/sobrenos/sobrenos.html">Sobre Nós</a>
             <button class="buttonIMG">
-                <img class="iconcart" src="/img/icon-cart.svg" alt="Ícone do Carrinho" />
+                <a href="/carrinho/carrinho.html">
+                    <img  class="iconcart" src="/img/icon-cart.svg" alt="Ícone do Carrinho"/>
+                </a>
             </button>
                     </div>
                 </div>
@@ -52,7 +54,7 @@
                     <div class="left-side">
                         <div class="items">
                            <div class="select-image">
-                            <img id="img1" src="/img/principal.webp" title="Peita Nike Masculino"/>
+                            <img id="img1" class="select-imageimg" src="/img/principal.webp" title="Peita Nike Masculino"/>
                            </div>
                            
                            <div class="thumbnails">
@@ -75,8 +77,8 @@
                         </div>              
                     </div> 
                     <div class="right-side">
-                        <div class="content">
-                            <h1 id="nomecamiseta"> CAMISA NIKE </h1>
+                        <div id="contentCar" class="content">
+                            <h1 class="nomecamiseta"> CAMISA NIKE </h1>
                             <div class="prices">
                                 <span id="price" class="price"> $125.00</span>
                                 <span class="off"> $250.00</span>
@@ -93,8 +95,10 @@
                                         <img src="/img/icon-plus.svg">
                                     </div>
                                 </div>
-                                <a href="" class="button"><img src="/img/icon-cart.svg"> Add to Cart</a>
-                            </div>
+                                <a href="javascript:void(0);" class="button" onclick="adicionarAoCarrinho()">
+                                    <img src="/img/icon-cart.svg"> Add to Cart
+                                </a>
+                                </div>
                     </div>                    
             </section>
             </div>    
@@ -124,6 +128,7 @@
           
           
           <script src="/api/apiform.js"></script>
-          <script src="/carrinho/contadorCarrinho/contadorcarrinho.js"></script>
+          <script src="/carrinho/contadorcarrinho.js"></script>
+          <script src="/carrinho/adcionaritem.js"></script>
   </body>
 </html>
