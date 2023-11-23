@@ -3,16 +3,27 @@ Guilherme Clothing - Site de Vendas de Roupas
 
 Este é o repositório do projeto Guilherme Clothing, um site de vendas de roupas desenvolvido com foco na simplicidade e elegância. O site consiste em três páginas principais: a página inicial (home), a página de exibição de produtos individuais e a página "Sobre Nós".
 
-Visão Geral
-O Guilherme Clothing é um projeto que visa criar uma plataforma de comércio eletrônico para venda de roupas, proporcionando aos usuários uma experiência agradável de compra. Com um design atraente e intuitivo, os clientes podem navegar facilmente pelo catálogo de produtos, visualizar detalhes de cada item e aprender mais sobre a equipe por trás da loja.
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+<p align="center">
+  <img alt="projeto Guilherme Clothers" src=".github/preview.png" width="100%">
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML e CSS
+- JavaScript
+- Git e Github
+- Node.js
 
 
-Ferramentas Utilizadas
-Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+## 💻 Projeto
 
-JavaScript: Usado para a interatividade e funcionalidade do site.
-HTML: Responsável pela estrutura e conteúdo das páginas.
-CSS: Utilizado para estilização e design das páginas.
+O projeto tem como objetivo a aplicação prática dos meus conhecimentos, destacando o uso de API, Express no backend e aprimoramento das habilidades no frontend. A proposta é consolidar a teoria em situações reais, implementando um sistema que envolva interação com APIs, desenvolvimento do backend utilizando Express, e aperfeiçoamento das técnicas no frontend.
 
 OBS: Este site foi criado apenas para fins didaticos, onde eu tive que me desafiar a colocar em pratica os conceitos que aprendi até agora!!! 
 
