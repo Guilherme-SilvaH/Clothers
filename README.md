@@ -4,7 +4,7 @@ Guilherme Clothing - Site de Vendas de Roupas
 Este é o repositório do projeto Guilherme Clothing, um site de vendas de roupas desenvolvido com foco na simplicidade e elegância. O site consiste em três páginas principais: a página inicial (home), a página de exibição de produtos individuais e a página "Sobre Nós".
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias
 </p>
 
 <p align="center">
