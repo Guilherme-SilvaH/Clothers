@@ -75,7 +75,6 @@ function exibirCarrinho() {
         produtoItem.appendChild(nomeProduto);
         produtoItem.appendChild(precoProduto);
         produtoItem.appendChild(quantidadeProduto);
-
         listaProdutosPopup.appendChild(produtoItem);
     });
 }

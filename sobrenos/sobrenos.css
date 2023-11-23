@@ -20,7 +20,7 @@ body {
 
 header{
     padding: 20px 0;
-    background-color: #c2bfbf74;
+
 }
 
 
@@ -248,3 +248,4 @@ fieldset.grupo.inputs {
         display: flex;
     }
 }
+

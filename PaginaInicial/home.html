@@ -11,32 +11,39 @@
     <div id="containergeral">
         <header>
             <div class="center">
-                <div class="nomeMarca">
-                    <p>Guilherme Clothers</p>
-                </div>    
-                <nav class="navbar"> 
-                    <a class="nav-iten" href="/PaginaInicial/home.html">Home</a>
-                    <a class="nav-iten"href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
-                    <a class="nav-iten"href="/sobrenos/sobrenos.html">Sobre Nós</a>
-                    <div class="cart-icon">
-                        <button class="buttonIMG"><img src="/img/icon-cart.svg" alt="Ícone do Carrinho" /></button>
-                    </div>
-                </nav>
-                <div class="mobile-menu-icon">
-                    <button  onclick="menuShow()" class="buttongIcon">
-                        <img class="icon" src="/img/menu_white_36dp.svg">
-                        
-                    </button>
+              <div class="nomeMarca">
+                <p>Guilherme Clothers</p>
+              </div>
+              <nav class="navbar">
+                <a href="/PaginaInicial/home.html">Home</a>
+                <a href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
+                <a href="/sobrenos/sobrenos.html">Sobre Nós</a>
+                <button class="buttonIMG" onclick="toggleCarrinho()">
+                  <img class="iconcart" src="/img/icon-cart.svg" alt="Ícone do Carrinho"/>
+                </button>
+                <div id="carrinhoContainer" class="carrinho-container">
+                  <!-- Conteúdo do carrinho aqui -->
+                  <ul id="listaProdutosPopup"></ul>
+                  <button onclick="voltarParaProdutos()">Continuar Comprando</button>
                 </div>
-                
-                <div class="mobile-menu">
-                    <a class="nav-item" href="/PaginaInicial/home.html">Home</a>
-                    <a class="nav-item" href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
-                    <a class="nav-item" href="/sobrenos/sobrenos.html">Sobre Nós</a>
-                    <div class="cart-icon-mobile">
-                        <button class="buttonIMG"><img src="/img/icon-cart.svg" alt="Ícone do Carrinho" /></button>
-                    </div>
-                </div>
+              </div>
+            </nav>
+          </div> 
+          <div class="mobile-menu-icon">
+            <button  onclick="menuShow()" class="buttongIcon">
+              <img class="icon" src="/img/menu_white_36dp.svg">
+            </button>
+          </div>
+          <div class="mobile-menu">
+            <a class="nav-item" href="/PaginaInicial/home.html">Home</a>
+            <a class="nav-item" href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
+            <a class="nav-item" href="/sobrenos/sobrenos.html">Sobre Nós</a>
+            <div class="cart-icon-mobile">
+              <button class="buttonIMG" id="carrinhoopen" onclick="toggleCarrinho()">
+                <img  src="/img/icon-cart.svg" alt="Ícone do Carrinho">
+              </button>
+            </div>
+          </div>
         </header>
         
          
@@ -59,7 +66,7 @@
                         <h2>Principais Produtos:</h2>
                     <div class="imagemagrupadas">
                         <div class="imagemagrupada">
-                            <img id="img1" src="/img/OIP 3.jpg" title="Peita Nike Masculino">
+                            <img id="img1" src="/img/026344BY.webp" title="Peita Nike Masculino">
                             <p>Peita Masculina Nike</p>
                         </div>
         
@@ -94,6 +101,7 @@
                     <label for="telefone">Seu Telefone</label>
                     <input type="tel" id="telefone" name="telefone" placeholder="19995681352">
                 </div>
+                <div id="mensagem-container"></div>
                 <div>
                     <button class="buttonForm" type="button" onclick="enviarFormulario()">Enviar formulário</button>
                 </div>
@@ -113,6 +121,10 @@
             </div>
         </footer>
         </div>
+
+       
+        <script src="/carrinho/contadorcarrinho.js"></script>
+        <script src="/carrinho/adcionaritem.js"></script> 
         <script src="/api/apiform.js"></script>
         <script src="/menuShow/menuShow.js"></script>
         </body>

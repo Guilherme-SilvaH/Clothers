@@ -24,6 +24,9 @@ function enviarFormulario() {
             return response.json();
         })
         .then(data => {
+            
+            alert("Formulário enviado");
+
             console.log("Resposta da API", data);
         })
         .catch(error => {
@@ -31,3 +34,6 @@ function enviarFormulario() {
         });
     }
 }
+
+
+
