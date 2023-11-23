@@ -83,36 +83,6 @@ function exibirCarrinho() {
 document.addEventListener('DOMContentLoaded', function () {
     var dadosProduto = JSON.parse(sessionStorage.getItem('produtoCarrinho'));
 
-    if (dadosProduto) {
-        var listaProdutos = document.getElementById('listaProdutos');
-
-        var produtoItem = document.createElement('li');
-        produtoItem.classList.add('produto-carrinho');
-
-        var imagemProduto = document.createElement('img');
-        imagemProduto.src = dadosProduto.imagem;
-        imagemProduto.alt = dadosProduto.nome;
-        imagemProduto.classList.add('produto-imagem');
-
-        var nomeProduto = document.createElement('div');
-        nomeProduto.textContent = dadosProduto.nome;
-        nomeProduto.classList.add('produto-nome');
-
-        var precoProduto = document.createElement('div');
-        precoProduto.textContent = dadosProduto.preco;
-        precoProduto.classList.add('produto-preco');
-
-        var quantidadeProduto = document.createElement('div');
-        quantidadeProduto.textContent = 'Quantidade: ' + dadosProduto.quantidade;
-        quantidadeProduto.classList.add('produto-quantidade');
-
-        produtoItem.appendChild(imagemProduto);
-        produtoItem.appendChild(nomeProduto);
-        produtoItem.appendChild(precoProduto);
-        produtoItem.appendChild(quantidadeProduto);
-
-        listaProdutos.appendChild(produtoItem);
-    }
 });
 
 
