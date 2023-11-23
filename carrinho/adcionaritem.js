@@ -80,12 +80,6 @@ function exibirCarrinho() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    var dadosProduto = JSON.parse(sessionStorage.getItem('produtoCarrinho'));
-
-});
-
-
 function voltarParaProdutos() {
     window.location.href = '/produtoInd/PeitaMasculinaNike.html';
 }
