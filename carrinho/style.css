@@ -8,7 +8,7 @@
 }
 
 :root{
-    --cor-primaria: white;
+    --cor-primaria: rgb(176, 176, 176);
     --cor-secundaria: #2a2f43ea;
     --cor-fundo: rgb(148, 198, 239);
 }
@@ -22,8 +22,8 @@ body{
 }
 
 .carrinho{
-    width: 400px;
-    height: min-content;
+    width: 600px;
+    height: 25rem;
     background: var(--cor-fundo);
     padding: 35px;
 }
@@ -56,7 +56,7 @@ body{
 .carrinho .cabecalho-carrinho h3{
     margin: auto;
     text-align: center;
-    font: 400 1.25rem "Poppins";
+    font: 400 2rem "Poppins";
 }
 
 
@@ -74,24 +74,28 @@ body{
 }
 
 .produto-imagem {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 80rem;
+    max-height: 14rem;
     margin-right: 10px;
     border-radius: 5px;
 }
 
 .produto-nome {
     flex-grow: 1;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .produto-preco {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .produto-quantidade {
     margin-left: 10px;
-    font-size: 16px;
+    font-size: 20px;
 }
+
+
+
+
 

@@ -8,127 +8,131 @@
   </head>
   <body>
 
-      <header>
-        <div class="center">
-          <div class="nomeMarca">
-            <p>Guilherme Clothers</p>
+    <header>
+      <div class="center">
+        <div class="nomeMarca">
+          <p>Guilherme Clothers</p>
+        </div>
+        <nav class="navbar">
+          <a href="/PaginaInicial/home.html">Home</a>
+          <a href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
+          <a href="/sobrenos/sobrenos.html">Sobre Nós</a>
+          <button class="buttonIMG" onclick="toggleCarrinho()">
+            <img class="iconcart" src="/img/icon-cart.svg" alt="Ícone do Carrinho"/>
+          </button>
+          <div id="carrinhoContainer" class="carrinho-container">
+            <!-- Conteúdo do carrinho aqui -->
+            <ul id="listaProdutosPopup"></ul>
+            <button onclick="voltarParaProdutos()">Continuar Comprando</button>
           </div>
-          <nav class="navbar">
-            <a href="/PaginaInicial/home.html">Home</a>
-            <a href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
-            <a href="/sobrenos/sobrenos.html">Sobre Nós</a>
-            <button class="buttonIMG">
-                <a href="/carrinho/carrinho.html">
-                    <img  class="iconcart" src="/img/icon-cart.svg" alt="Ícone do Carrinho"/>
-                </a>
-            </button>
-                    </div>
-                </div>
+        </div>
+      </nav>
+    </div> 
+    <div class="mobile-menu-icon">
+      <button  onclick="menuShow()" class="buttongIcon">
+        <img class="icon" src="/img/menu_white_36dp.svg">
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <a class="nav-item" href="/PaginaInicial/home.html">Home</a>
+      <a class="nav-item" href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
+      <a class="nav-item" href="/sobrenos/sobrenos.html">Sobre Nós</a>
+      <div class="cart-icon-mobile">
+        <button class="buttonIMG" id="carrinhoopen" onclick="abrirPopup()">
+          <img  src="/img/icon-cart.svg" alt="Ícone do Carrinho">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="campo">
+        <div class="left-side">
+          <div class="items">
+            <div class="select-image">
+              <img id="img1" class="select-imageimg" src="/img/principal.webp" title="Peita Nike Masculino"/>
             </div>
-          </nav>
-        </div> 
-
-        <div class="mobile-menu-icon">
-                    <button  onclick="menuShow()" class="buttongIcon">
-                        <img class="icon" src="/img/menu_white_36dp.svg">
-                        
-                    </button>
-                </div>
-                
-                <div class="mobile-menu">
-                    <a class="nav-item" href="/PaginaInicial/home.html">Home</a>
-                    <a class="nav-item" href="/produtoInd/PeitaMasculinaNike.html">Produtos</a>
-                    <a class="nav-item" href="/sobrenos/sobrenos.html">Sobre Nós</a>
-                    <div class="cart-icon-mobile">
-                        <button class="buttonIMG" id="carrinhoopen"><img src="/img/icon-cart.svg" alt="Ícone do Carrinho" /></button>
-                    </div>
-                </div>
-
-
-      </header>
-
-
-        <main>
-            <section>
-                <div class="campo">
-                    <div class="left-side">
-                        <div class="items">
-                           <div class="select-image">
-                            <img id="img1" class="select-imageimg" src="/img/principal.webp" title="Peita Nike Masculino"/>
-                           </div>
-                           
-                           <div class="thumbnails">
-                                <div class="thumbnail">
-                                    <img id="img2" src="/img/0270917TA1.webp" title="Peita Nike Masculino">
-                                </div>
-
-                                <div class="thumbnail">
-                                    <img id="img3" src="/img/0270917TA1.webp" title="Peita Nike Masculino">
-                                </div>
-
-                                <div class="thumbnail">
-                                    <img id="img4" src="/img/0270917TA2.webp" title="Peita Nike Masculino" />
-                                </div>
-
-                                <div class="thumbnail">
-                                    <img id="img5" src="/img/0270917TA3.webp" title="Peita Nike Masculino" />
-                                </div>
-                           </div>
-                        </div>              
-                    </div> 
-                    <div class="right-side">
-                        <div id="contentCar" class="content">
-                            <h1 class="nomecamiseta"> CAMISA NIKE </h1>
-                            <div class="prices">
-                                <span id="price" class="price"> $125.00</span>
-                                <span class="off"> $250.00</span>
-                            </div>
-                            <div class="option" id="contadorquant">
-                                <div class="amount">
-                                    <div id="menos" class="minus">
-                                        <img src="/img/icon-minus.svg">
-                                    </div>  
-                                    <span id="quantidade">
-                                        0
-                                    </span>
-                                    <div id="mais" class="plus">
-                                        <img src="/img/icon-plus.svg">
-                                    </div>
-                                </div>
-                                <a href="javascript:void(0);" class="button" onclick="adicionarAoCarrinho()">
-                                    <img src="/img/icon-cart.svg"> Add to Cart
-                                </a>
-                                </div>
-                    </div>                    
-            </section>
-            </div>    
-      
-            <form>
-              <div class="titulo">
-                  <h3 class="grupo">Formulário Para Receber as Novidades e Promoções:</h3>
+            
+            <div class="thumbnails">
+              <div class="thumbnail">
+                <img id="img2" src="/img/0270917TA1.webp" title="Peita Nike Masculino">
               </div>
-              <fieldset class="grupo">
-                  <div class="inputs">
-                      <label for="name">Seu Nome</label>
-                      <input type="text" id="name" name="name" placeholder="Nome">
-                  </div>
-                  <div class="inputs">
-                      <label for="email">Seu Email</label>
-                      <input type="email" id="email" name="email" placeholder="exemplo@gmail.com">
-                  </div>
-                  <div class="inputs">
-                      <label for="telefone">Seu Telefone</label>
-                      <input type="tel" id="telefone" name="telefone" placeholder="19995681352">
-                  </div>
-                  <div>
-                      <button class="buttonForm" type="button" onclick="enviarFormulario()">Enviar formulário</button>
-                  </div>
-              </fieldset>
-          </form>
-          
-          
-          <script src="/api/apiform.js"></script>
-          <script src="/carrinho/contadorcarrinho.js"></script>
-          <script src="/carrinho/adcionaritem.js"></script>
-  </body>
-</html>
+
+              <div class="thumbnail">
+                <img id="img3" src="/img/0270917TA1.webp" title="Peita Nike Masculino">
+              </div>
+
+              <div class="thumbnail">
+                <img id="img4" src="/img/0270917TA2.webp" title="Peita Nike Masculino" />
+              </div>
+
+              <div class="thumbnail">
+                <img id="img5" src="/img/0270917TA3.webp" title="Peita Nike Masculino" />
+              </div>
+            </div>
+          </div>              
+        </div> 
+        <div class="right-side">
+          <div id="contentCar" class="content">
+            <h1 class="nomecamiseta"> CAMISA NIKE </h1>
+            <div class="prices">
+              <span id="price" class="price"> $125.00</span>
+              <span class="off"> $250.00</span>
+            </div>
+            <div class="option" id="contadorquant">
+              <div class="amount">
+                <div id="menos" class="minus">
+                  <img src="/img/icon-minus.svg">
+                </div>  
+                <span id="quantidade">
+                  0
+                </span>
+                <div id="mais" class="plus">
+                  <img src="/img/icon-plus.svg">
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="button" onclick="adicionarAoCarrinho()">
+                <img src="/img/icon-cart.svg"> Add to Cart
+              </a>
+            </div>
+          </div>                    
+        </section>
+      </div>    
+
+      <form>
+        <div class="titulo">
+          <h3 class="grupo">Formulário Para Receber as Novidades e Promoções:</h3>
+        </div>
+        <fieldset class="grupo">
+          <div class="inputs">
+            <label for="name">Seu Nome</label>
+            <input type="text" id="name" name="name" placeholder="Nome">
+          </div>
+          <div class="inputs">
+            <label for="email">Seu Email</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@gmail.com">
+          </div>
+          <div class="inputs">
+            <label for="telefone">Seu Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="19995681352">
+          </div>
+          <div>
+            <button class="buttonForm" type="button" onclick="enviarFormulario()">Enviar formulário</button>
+          </div>
+        </fieldset>
+      </form>
+      <div id="carrinhoPopup" class="popup">
+        <!-- Conteúdo do popup do carrinho -->
+        <div class="popup-content">
+          <span class="close" onclick="fecharPopup()">&times;</span>
+          <h2>Seu Carrinho</h2>
+          <ul id="listaProdutosPopup"></ul>
+          <button onclick="voltarParaProdutos()">Continuar Comprando</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/api/apiform.js"></script>
+  <script src="/carrinho/contadorcarrinho.js"></script>
+  <script src="/carrinho/adcionaritem.js"></script>
