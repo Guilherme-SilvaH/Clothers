@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto tem como objetivo a aplicação prática dos meus conhecimentos, destacando o uso de API, Express no backend e aprimoramento das habilidades no frontend. A proposta é consolidar a teoria em situações reais, implementando um sistema que envolva interação com APIs, desenvolvimento do backend utilizando Express, e aperfeiçoamento das técnicas no frontend.
+O projeto tem como objetivo a aplicação prática dos meus conhecimentos, destacando o uso de API, Express e Node.js no backend e aprimoramento das habilidades no frontend. A proposta é consolidar a teoria em situações reais, implementando um sistema que envolva interação com APIs, desenvolvimento do backend utilizando Express, e aperfeiçoamento das técnicas no frontend.
 
 OBS: Este site foi criado apenas para fins didaticos, onde eu tive que me desafiar a colocar em pratica os conceitos que aprendi até agora!!! 
 
