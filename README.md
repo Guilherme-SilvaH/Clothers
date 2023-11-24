@@ -8,11 +8,7 @@ Este é o repositório do projeto Guilherme Clothing, um site de vendas de roupa
 </p>
 
 <p align="center">
-<<<<<<< HEAD
-  <img alt="projeto Guilherme Clothers" src=".github/preview.jpg width="100%>
-=======
- <img alt="projeto Guilherme Clothers" src=".github/preview.jpg" width="100%">
->>>>>>> 77c1b9ede34f838574333e2800bac345c82d9101
+<img alt="projeto Guilherme Clothers" src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
